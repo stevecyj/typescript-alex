@@ -10,21 +10,21 @@ interface IPoint {
   getDistances: (p: IPoint) => number;
 }
 
-class Point implements IPoint {
-  // x: number;
-  // y: number;
+// class Point implements IPoint {
+//   // x: number;
+//   // y: number;
 
-  constructor(public x: number, public y: number) {
-    // this.x = x;
-    // this.y = y;
-  }
-  drawPoint = () => {
-    console.log('x: ', this.x, ' y: ', this.y);
-  };
-  getDistances = (p: IPoint) => {
-    return Math.pow(p.x - this.x, 2) + Math.pow(p.y - this.y, 2);
-  };
-}
+//   constructor(public x: number, public y: number) {
+//     // this.x = x;
+//     // this.y = y;
+//   }
+//   drawPoint = () => {
+//     console.log('x: ', this.x, ' y: ', this.y);
+//   };
+//   getDistances = (p: IPoint) => {
+//     return Math.pow(p.x - this.x, 2) + Math.pow(p.y - this.y, 2);
+//   };
+// }
 
-const point = new Point(2, 3);
-point.drawPoint();
+// const point = new Point(2, 3);
+// point.drawPoint();
